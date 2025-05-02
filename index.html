@@ -2,92 +2,182 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>디비스쿨 | 프리미엄 실시간 DB판매</title>
-  <meta name="description" content="주식DB, 대출DB, 해선DB 등 고품질 실시간 데이터 판매. 마케팅 최적화 맞춤형 고객 DB 제공.">
+  <title>디비스쿨 | 착한 가격의 DB마켓</title>
+  <meta name="description" content="맛있는 가격! 실속 있는 DB! 주식, 대출, 마케팅용 최신DB 전문 판매 플랫폼">
+  <meta name="keywords" content="DB, 주식DB, 대출DB, 마케팅DB, 퍼미션DB, 저렴한 DB판매, 디비스쿨">
   <style>
-    body { margin: 0; font-family: 'Noto Sans KR', sans-serif; background-color: #f5f5f5; color: #333; }
-    a { text-decoration: none; color: inherit; }
-    header { background: linear-gradient(to right, #111827, #1f2937); color: white; padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 3rem; margin-bottom: 10px; }
-    header p { font-size: 1.25rem; max-width: 700px; margin: auto; }
+    body { font-family: 'Pretendard', 'Noto Sans KR', sans-serif; background: #fffcee; margin: 0; color: #333; }
+    a { text-decoration: none; }
 
-    .stats-section { display: flex; flex-wrap: wrap; justify-content: center; background: #4f46e5; color: white; padding: 40px 20px; text-align: center; }
-    .stat-box { flex: 1 1 200px; margin: 10px; font-size: 1.5rem; }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background: #ffe600;
+      color: #1e1e1e;
+    }
+    .intro-left {
+      flex: 1 1 300px;
+      padding-right: 20px;
+    }
+    .intro-right {
+      flex: 1 1 300px;
+      background: #e60012;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .intro-right li {
+      list-style: none;
+      font-size: 1.4em;
+      margin: 12px 0;
+    }
 
-    .category-section { padding: 60px 20px; text-align: center; background: white; }
-    .category-section h2 { font-size: 2rem; margin-bottom: 40px; }
-    .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
-    .category-card { background: #111827; color: white; border-radius: 10px; padding: 30px 20px; font-size: 1.2rem; }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #e60012;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+    }
 
-    .info-section { padding: 60px 20px; background: #e5e7eb; text-align: center; }
-    .info-section h2 { font-size: 1.8rem; margin-bottom: 30px; }
-    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
-    .info-box { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); font-size: 1rem; }
+    .categories {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #fff7d1;
+      border: 2px dashed #e60012;
+      padding: 25px;
+      border-radius: 10px;
+      font-size: 1.1em;
+    }
 
-    .testimonial-section { background: #fff; padding: 50px 20px; text-align: center; }
-    .testimonial-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .testimonial { background: #f9fafb; padding: 20px; border-left: 4px solid #6366f1; max-width: 300px; }
+    .info-block {
+      background: #fff7e6;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .info-grid div {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
 
-    footer { background: #1f2937; color: #ccc; padding: 40px 20px; text-align: center; }
-    .footer-links a { color: #aaa; margin: 0 10px; font-size: 0.9rem; }
+    .reviews {
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    .review-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    blockquote {
+      background: #fffdea;
+      padding: 20px;
+      border-left: 5px solid #e60012;
+      width: 250px;
+    }
+
+    footer {
+      background: #1b1b1b;
+      color: #ccc;
+      text-align: center;
+      padding: 30px;
+    }
+    .footer-links a {
+      color: #ffc107;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>디비스쿨</h1>
-    <p>최신 주식/대출/해선/퍼미션 DB까지! 고정확도 데이터로 마케팅 성공을 경험하세요.</p>
-  </header>
 
-  <section class="stats-section">
-    <div class="stat-box"><strong>8.1K+</strong><br>일일 방문자</div>
-    <div class="stat-box"><strong>56.1K+</strong><br>누적 방문</div>
-    <div class="stat-box"><strong>128</strong><br>이번 달 신규 DB</div>
-    <div class="stat-box"><strong>12.7K+</strong><br>누적 거래 건</div>
-  </section>
-
-  <section class="category-section">
-    <h2>카테고리별 디비</h2>
-    <div class="category-grid">
-      <div class="category-card">주식디비<br><small>투자 타겟 집중</small></div>
-      <div class="category-card">대출디비<br><small>자영업자/직장인 타겟</small></div>
-      <div class="category-card">최신디비<br><small>매일 업데이트</small></div>
-      <div class="category-card">해선디비<br><small>해외선물 관심층</small></div>
-      <div class="category-card">퍼미션디비<br><small>수신동의 포함</small></div>
-      <div class="category-card">디비판매업체<br><small>패키지 판매 가능</small></div>
+  <!-- 상단 소개 -->
+  <section class="intro">
+    <div class="intro-left">
+      <h1 style="margin-top:0;">디비스쿨 🍕</h1>
+      <p>맛있는 가격에 제대로 된 DB!<br>주식, 대출, 토지노, 해선 등 다양한 DB를 정직하게 제공합니다.</p>
+      <p><strong>매일매일 신선한 DB</strong>로 마케팅에 힘을 더하세요.</p>
+      <a href="https://t.me/DBschool3" class="btn" target="_blank">텔레그램 문의하기</a>
+    </div>
+    <div class="intro-right">
+      <ul>
+        <li><strong>👥 8,100+</strong> 일일 방문자</li>
+        <li><strong>📦 56,000+</strong> 누적 DB 판매</li>
+        <li><strong>💼 12,700+</strong> 거래 완료</li>
+        <li><strong>🆕 128건</strong> 신규 DB 등록 (이번 달)</li>
+      </ul>
     </div>
   </section>
 
-  <section class="info-section">
-    <h2>이런 업종에서 디비스쿨을 사용합니다</h2>
+  <!-- DB 카테고리 -->
+  <section class="categories">
+    <h2>📂 취급 DB 카테고리</h2>
+    <div class="grid">
+      <div class="card">주식디비<br><small>투자 관심 고객</small></div>
+      <div class="card">대출디비<br><small>직장인/자영업자 수요</small></div>
+      <div class="card">토지노디비<br><small>토큰·슬롯 이용자 중심</small></div>
+      <div class="card">해선디비<br><small>고위험 투자 대상</small></div>
+      <div class="card">퍼미션DB<br><small>문자/콜 동의 포함</small></div>
+      <div class="card">최신DB 패키지<br><small>실시간 수집 + 타겟정렬</small></div>
+    </div>
+  </section>
+
+  <!-- 정보 섹션 -->
+  <section class="info-block">
+    <h2>👀 이런 분들께 추천드려요</h2>
     <div class="info-grid">
-      <div class="info-box">주식 리딩방 및 투자 유도 영업</div>
-      <div class="info-box">대출, 리파이낸싱, 카드 발급 상담</div>
-      <div class="info-box">해외선물/FX마진 트레이딩 홍보</div>
-      <div class="info-box">수신동의 포함 문자 마케팅</div>
-      <div class="info-box">콜센터 및 텔레마케팅 활용</div>
-      <div class="info-box">블로그/카페 유입 기반 맞춤 DB</div>
+      <div><strong>주식리딩 운영자</strong><br>적중률 높은 DB로 전환 ↑</div>
+      <div><strong>대출 상담원</strong><br>타겟 맞춤 DB로 콜 효율 향상</div>
+      <div><strong>마케팅 대행사</strong><br>최신 DB로 캠페인 퍼포먼스 향상</div>
+      <div><strong>콜센터 관리자</strong><br>실수요 기반 DB 확보 가능</div>
+      <div><strong>토지노·슬롯 마케터</strong><br>유입자 기반 정확한 세분화</div>
+      <div><strong>문자발송 서비스</strong><br>퍼미션 기반 DB로 반응률 ↑</div>
     </div>
   </section>
 
-  <section class="testimonial-section">
-    <h2>고객들의 실제 후기</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">“대출DB 품질이 우수해서 재구매합니다.”</div>
-      <div class="testimonial">“문자 반응률이 두 배 올라갔습니다!”</div>
-      <div class="testimonial">“퍼미션DB는 여기만 씁니다. 정확도 최고!”</div>
+  <!-- 고객 후기 -->
+  <section class="reviews">
+    <h2>⭐ 고객 후기</h2>
+    <div class="review-grid">
+      <blockquote>“신선도 높은 DB 덕분에 문자 반응률이 확 뛰었어요!”</blockquote>
+      <blockquote>“다른 데랑 비교 불가… 여기만 씁니다.”</blockquote>
+      <blockquote>“가성비 갑! 매달 정기구매 중입니다.”</blockquote>
     </div>
   </section>
 
+  <!-- 푸터 -->
   <footer>
-    <div><strong>디비스쿨</strong> | 고품질 실전 DB 플랫폼</div>
+    <div class="footer-logo"><strong>디비스쿨 🍕</strong> | 착한 가격의 DB전문점</div>
     <div class="footer-links">
-      <a href="#">회사소개</a>
-      <a href="#">DB 목록</a>
-      <a href="#">이용약관</a>
-      <a href="#">개인정보처리방침</a>
+      <a href="#">회사소개</a> | 
+      <a href="#">DB종류</a> | 
+      <a href="#">개인정보정책</a>
     </div>
     <p>© 2025 디비스쿨. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
